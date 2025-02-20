@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sklep Odzieżowy</title>
@@ -16,18 +15,22 @@
             min-height: 100vh;
         }
         header {
-            background-color: grey;
+            background-color: #333;
             color: gold;
             padding: 15px;
             display: flex;
             align-items: center;
+            justify-content: flex-start;
         }
         .logo {
             max-width: 130px;
             margin-left: 20px;
+            height: auto;
         }
         h1 {
-            margin: 0 auto;
+            margin-left: 20px;
+            flex-grow: 1;
+            text-align: center;
         }
         .products {
             display: flex;
@@ -86,3 +89,4 @@
     </footer>
 </body>
 </html>
+
