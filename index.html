@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sklep Odzieżowy</title>
@@ -10,21 +11,30 @@
             margin: 0;
             padding: 0;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         header {
-            background-color: black;
+            background-color: grey;
             color: gold;
             padding: 15px;
+            display: flex;
+            align-items: center;
         }
         .logo {
             max-width: 130px;
-            position: absolute; left: 10px;
+            margin-left: 20px;
+        }
+        h1 {
+            margin: 0 auto;
         }
         .products {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
             padding: 20px;
+            flex-grow: 1;
         }
         .product {
             border: 1px solid #ddd;
@@ -41,11 +51,9 @@
             background-color: #333;
             color: white;
             padding: 10px;
-            position: relative;
-            bottom: 0;
             width: 100%;
+            margin-top: auto;
         }
-        
     </style>
 </head>
 <body>
@@ -68,7 +76,7 @@
         </div>
         <div class="product">
             <img src="https://via.placeholder.com/200" alt="Produkt 3">
-            <h2></h2>
+            <h2>Produkt 3</h2>
             <p>199.99 PLN</p>
             <button>Dodaj do koszyka</button>
         </div>
