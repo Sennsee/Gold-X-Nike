@@ -9,70 +9,72 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            text-align: center;
         }
         header {
-            background: #333;
+            background-color: #333;
             color: white;
             padding: 15px;
-            text-align: center;
         }
-        .container {
-            width: 80%;
-            margin: 20px auto;
+        .logo {
+            max-width: 100px;
+            display: block;
+            margin: 0 auto 10px;
+        }
+        .products {
             display: flex;
+            justify-content: center;
             flex-wrap: wrap;
-            justify-content: space-around;
+            padding: 20px;
         }
         .product {
-            background: white;
-            padding: 20px;
+            border: 1px solid #ddd;
             margin: 10px;
+            padding: 10px;
+            width: 200px;
             text-align: center;
-            width: 250px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .product img {
             width: 100%;
             height: auto;
         }
-        .button {
-            display: inline-block;
-            background: #28a745;
+        footer {
+            background-color: #333;
             color: white;
             padding: 10px;
-            text-decoration: none;
-            margin-top: 10px;
-            border-radius: 5px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
     <header>
+        <img src="image (2).png" alt="Logo Sklepu" class="logo">
         <h1>Sklep Odzieżowy</h1>
     </header>
-    <div class="container">
+    <section class="products">
         <div class="product">
-            <img src="https://via.placeholder.com/250" alt="Koszulka">
+            <img src="https://via.placeholder.com/200" alt="Produkt 1">
             <h2>Koszulka</h2>
-            <p>Stylowa koszulka z bawełny</p>
-            <p><strong>59,99 zł</strong></p>
-            <a href="#" class="button">Dodaj do koszyka</a>
+            <p>49.99 PLN</p>
+            <button>Dodaj do koszyka</button>
         </div>
         <div class="product">
-            <img src="https://via.placeholder.com/250" alt="Bluza">
-            <h2>Bluza</h2>
-            <p>Ciepła bluza z kapturem</p>
-            <p><strong>129,99 zł</strong></p>
-            <a href="#" class="button">Dodaj do koszyka</a>
-        </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/250" alt="Spodnie">
+            <img src="https://via.placeholder.com/200" alt="Produkt 2">
             <h2>Spodnie</h2>
-            <p>Wygodne spodnie dresowe</p>
-            <p><strong>89,99 zł</strong></p>
-            <a href="#" class="button">Dodaj do koszyka</a>
+            <p>99.99 PLN</p>
+            <button>Dodaj do koszyka</button>
         </div>
-    </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/200" alt="Produkt 3">
+            <h2>Kurtka</h2>
+            <p>199.99 PLN</p>
+            <button>Dodaj do koszyka</button>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Sklep Odzieżowy. Wszelkie prawa zastrzeżone.</p>
+    </footer>
 </body>
 </html>
